@@ -58,3 +58,30 @@ body {
     color: white;
     border: 1px solid white;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        text-align: center;
+        padding: 80px 6% 40px;
+        height: auto;
+        min-height: 100vh;
+    }
+ 
+    .hero-left img {
+        width: 220px;
+        height: 220px;
+    }
+ 
+    .hero-right {
+        text-align: center;
+        max-width: 100%;
+    }
+ 
+    .hero-right h1 {
+        font-size: 28px;
+    }
+}
