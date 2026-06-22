@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #14305c;
+    color: white;
+    min-height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 🔝 TOP NAVBAR */
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 25px;
+    padding: 24px 50px;
+}
+
+.top-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+
+.top-right a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.top-right .active {
+    text-decoration: underline;
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* PAGE HEADER */
+.media-header {
+    text-align: center;
+    padding: 120px 10% 20px;
+}
+
+.media-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.media-header .subhead {
+    font-size: 16px;
+    font-style: italic;
+    color: #d7e3f7;
+}
+
+/* MEDIA GRID */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px 10% 60px;
+}
+
+.media-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 16px;
+    transition: 0.3s;
+}
+
+.media-card:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-4px);
+}
+
+.media-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.media-thumb.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.08);
+    border: 2px dashed rgba(255,255,255,0.3);
+    font-size: 40px;
+    color: rgba(255,255,255,0.5);
+}
+
+.media-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d7e3f7;
+    margin: 0;
+}
+
+/* FOOTER */
+.footer-note {
+    text-align: center;
+    padding: 30px 0 50px;
+    opacity: 0.7;
+}
+
+.footer-note p {
+    margin: 4px 0;
+}
+
+.footer-note .small {
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .media-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+    .media-header {
+        padding: 100px 6% 20px;
+    }
+}
