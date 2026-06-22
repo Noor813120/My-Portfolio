@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f7fb;
+    background: #14305c;
 }
 
 /* HERO LAYOUT */
@@ -33,10 +33,11 @@ body {
 .hero-right h1 {
     font-size: 38px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .hero-right p {
-    color: #555;
+    color: #d7e3f7;
     margin-bottom: 20px;
 }
 
@@ -44,8 +45,8 @@ body {
 .hero-btn {
     padding: 12px 25px;
     border: none;
-    background: #4da3ff;
-    color: white;
+    background: white;
+    color: #14305c;
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
@@ -53,7 +54,7 @@ body {
 }
 
 .hero-btn:hover {
-    background: white;
-    color: #4da3ff;
-    border: 1px solid #4da3ff;
+    background: #14305c;
+    color: white;
+    border: 1px solid white;
 }
